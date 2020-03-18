@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator - Developed by Raul Rincones Izaguirre</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/style.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-8 col-xs-12" style="text-align:center;">
+          <svg class="swicther" id="swicther" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <path style="fill:#CFD8DC;" d="M373.333,117.333H138.667C62.083,117.333,0,179.417,0,256s62.083,138.667,138.667,138.667h234.667
+            C449.917,394.667,512,332.583,512,256S449.917,117.333,373.333,117.333z"/>
+          <circle class="circleGreen" style="fill:#4CAF50;" cx="373.333" cy="256" r="96"/>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+
+          </svg>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="jumbotron text-center" style="background-color: #fff;">
+      <p id="process" class="processScreen"></p>
+      <h1 id="totalScreen">0</h1>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+          <!-- ROW 1 -->
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but7" class="bu">7</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but8" class="bu">8</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3  id="but9"class="bu">9</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="divide" class="bu">÷</h3>
+          </div>
+
+          <!-- ROW 2 -->
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but4" class="bu">4</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but5" class="bu">5</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but6" class="bu">6</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="butX" class="bu">X</h3>
+          </div>
+
+          <!-- ROW 3 -->
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but1" class="bu">1</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but2" class="bu">2</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but3" class="bu">3</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="butSub" class="bu">-</h3>
+          </div>
+
+          <!-- ROW 4 -->
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="butErease" class="bu"><</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="but0" class="bu">0</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="comma" class="bu">,</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 butConatiner">
+            <h3 id="butAdd" class="bu">+</h3>
+          </div>
+
+          <div class="col-md-8 col-sm-8 col-xs-8 butConatiner">
+            <h3 id="equal" class="equal">=</h3>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 butConatiner">
+            <h3 id="ce" class="clean">CE</h3>
+          </div>
+        </div>
+
+      </div>
+      <!-- CREDITS -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+          <p class="credits">Developed by <b>Raul Rincones Izaguirre</b> / with pure <b>JavaScript, Sass & AnimeJS</b> </p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./anime.min.js"></script>
+    <script src="./lights.js"></script>
+    <script src="./app.js"></script>
+
+  </body>
+</html>

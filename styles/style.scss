@@ -1,0 +1,72 @@
+$buttonColor : #35353599;
+$fontColor : #fff;
+$buHoverColor : #212121;
+$cleanBuColor: #ffd400;
+$cleanBuHoverColor: #d4b20d;
+$resultBuColor: #ec1717;
+$resultBuHoverColor: #b71010;
+
+
+.processScreen{
+  min-height: 40px;
+  height: 40px;
+}
+
+.butConatiner{
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+  margin-top:-2em;
+  cursor:pointer;
+}
+
+.bu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $buttonColor;
+  color:$fontColor;
+  height:5em;
+  cursor:pointer;
+}
+
+.bu:hover {
+  background-color: $buHoverColor;
+}
+
+.equal{
+  background-color: $resultBuColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  height:5em;
+  cursor:pointer;
+}
+
+.equal:hover {
+  background-color: $resultBuHoverColor;
+}
+
+.clean{
+  background-color: $cleanBuColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  height:5em;
+  cursor:pointer;
+}
+
+.clean:hover {
+  background-color: $cleanBuHoverColor;
+}
+
+.swicther{
+  width:5em;
+  cursor: pointer;
+}
+
+.credits{
+  font-size: 12px;
+  text-align: center;
+}
